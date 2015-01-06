@@ -9,14 +9,56 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UITabBarControllerDelegate {
 
 	var window: UIWindow?
 
 
 	func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 		// Override point for customization after application launch.
-		return true
+		if window == nil {
+			println("window is nil.");
+			return true;
+		}
+
+		let tabBarController: UITabBarController = window!.rootViewController as UITabBarController;
+		tabBarController.delegate = self;
+		tabBarController.viewControllers = [	//an array containing 5 view controller objects
+			ViewController(
+				title: "song",
+				badge: "1",
+				mp3: "03",
+				text: "Make Me Wanna Die"),
+
+			ViewController(
+				title: "song",
+				badge: "2",
+				mp3: "06",
+				text: "Just Tonight"),
+
+			ViewController(
+				title: "song",
+				badge: "3",
+				mp3: "mac",
+				text: "Knock Knock")
+		];
+
+		tabBarController.selectedIndex = 0;	//unnecessary: 0 (the leftmost tab) is the default
+		window!.rootViewController = tabBarController;
+		return true;
+	}
+	
+	func tabBarController(tabBarController: UITabBarController,
+		didSelectViewController viewController: UIViewController) {
+
+		//Convert UIViewController to ViewController.
+		let vc: ViewController = viewController as ViewController;
+		println("\(vc.title!) was selected.");
+
+		if vc.audioPlayer != nil {
+			vc.audioPlayer!.currentTime = 0;	//Rewind to start of audio file.
+		}
+		
 	}
 
 	func applicationWillResignActive(application: UIApplication) {
@@ -43,4 +85,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
 }
-

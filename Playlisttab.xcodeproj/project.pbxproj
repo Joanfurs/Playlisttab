@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF32CBBF1A5871C900AFAA97 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF32CBBE1A5871C900AFAA97 /* View.swift */; };
+		AFB840591A58B3DF00DFF4CA /* mac.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFB840581A58B3DF00DFF4CA /* mac.mp3 */; };
 		AFFEA2F21A487B9F0037E105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA2F11A487B9F0037E105 /* AppDelegate.swift */; };
 		AFFEA2F41A487B9F0037E105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA2F31A487B9F0037E105 /* ViewController.swift */; };
 		AFFEA2F71A487B9F0037E105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFFEA2F51A487B9F0037E105 /* Main.storyboard */; };
 		AFFEA2F91A487B9F0037E105 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFFEA2F81A487B9F0037E105 /* Images.xcassets */; };
 		AFFEA2FC1A487B9F0037E105 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AFFEA2FA1A487B9F0037E105 /* LaunchScreen.xib */; };
 		AFFEA3081A487B9F0037E105 /* PlaylisttabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFEA3071A487B9F0037E105 /* PlaylisttabTests.swift */; };
+		AFFEA31F1A4880270037E105 /* 03.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFFEA31D1A4880270037E105 /* 03.mp3 */; };
+		AFFEA3201A4880270037E105 /* 06.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFFEA31E1A4880270037E105 /* 06.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AF32CBBE1A5871C900AFAA97 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		AFB840581A58B3DF00DFF4CA /* mac.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mac.mp3; sourceTree = "<group>"; };
 		AFFEA2EC1A487B9F0037E105 /* Playlisttab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Playlisttab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEA2F01A487B9F0037E105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFFEA2F11A487B9F0037E105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +42,8 @@
 		AFFEA3011A487B9F0037E105 /* PlaylisttabTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlaylisttabTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFFEA3061A487B9F0037E105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFFEA3071A487B9F0037E105 /* PlaylisttabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylisttabTests.swift; sourceTree = "<group>"; };
+		AFFEA31D1A4880270037E105 /* 03.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 03.mp3; sourceTree = "<group>"; };
+		AFFEA31E1A4880270037E105 /* 06.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 06.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +87,7 @@
 			children = (
 				AFFEA2F11A487B9F0037E105 /* AppDelegate.swift */,
 				AFFEA2F31A487B9F0037E105 /* ViewController.swift */,
+				AF32CBBE1A5871C900AFAA97 /* View.swift */,
 				AFFEA2F51A487B9F0037E105 /* Main.storyboard */,
 				AFFEA2F81A487B9F0037E105 /* Images.xcassets */,
 				AFFEA2FA1A487B9F0037E105 /* LaunchScreen.xib */,
@@ -90,6 +99,9 @@
 		AFFEA2EF1A487B9F0037E105 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AFB840581A58B3DF00DFF4CA /* mac.mp3 */,
+				AFFEA31D1A4880270037E105 /* 03.mp3 */,
+				AFFEA31E1A4880270037E105 /* 06.mp3 */,
 				AFFEA2F01A487B9F0037E105 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -192,6 +204,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AFB840591A58B3DF00DFF4CA /* mac.mp3 in Resources */,
+				AFFEA31F1A4880270037E105 /* 03.mp3 in Resources */,
+				AFFEA3201A4880270037E105 /* 06.mp3 in Resources */,
 				AFFEA2F71A487B9F0037E105 /* Main.storyboard in Resources */,
 				AFFEA2FC1A487B9F0037E105 /* LaunchScreen.xib in Resources */,
 				AFFEA2F91A487B9F0037E105 /* Images.xcassets in Resources */,
@@ -214,6 +229,7 @@
 			files = (
 				AFFEA2F41A487B9F0037E105 /* ViewController.swift in Sources */,
 				AFFEA2F21A487B9F0037E105 /* AppDelegate.swift in Sources */,
+				AF32CBBF1A5871C900AFAA97 /* View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,6 +421,7 @@
 				AFFEA30D1A487B9F0037E105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AFFEA30E1A487B9F0037E105 /* Build configuration list for PBXNativeTarget "PlaylisttabTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +430,7 @@
 				AFFEA3101A487B9F0037E105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
